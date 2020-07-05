@@ -17,7 +17,7 @@ jobs:
       - name: "Add labels based on branch name"
         uses: "actions/github-script@v2"
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const branchPrefixLabels = {
               feature: "enhancement",
