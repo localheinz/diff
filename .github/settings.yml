@@ -1,7 +1,7 @@
 # https://github.com/probot/settings
 
 branches:
-  - name: "master"
+  - name: "main"
 
     # https://docs.github.com/en/rest/reference/repos#delete-branch-protection
     # https://docs.github.com/en/rest/reference/repos#update-branch-protection
@@ -60,7 +60,7 @@ repository:
   allow_rebase_merge: false
   allow_squash_merge: false
   archived: false
-  default_branch: "master"
+  default_branch: "main"
   delete_branch_on_merge: true
   description: ":fork_and_knife: Fork of sebastian/diff for use with ergebnis/composer-normalize."
   has_downloads: true
