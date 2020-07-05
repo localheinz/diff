@@ -6,6 +6,7 @@
          beStrictAboutCoversAnnotation="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTodoAnnotatedTests="true"
+         cacheResultFile=".build/phpunit/cache"
          verbose="true">
     <testsuites>
         <testsuite name="default">
