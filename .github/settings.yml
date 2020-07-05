@@ -1,7 +1,11 @@
 # https://github.com/probot/settings
 
 branches:
-  - name: master
+  - name: "master"
+
+    # https://docs.github.com/en/rest/reference/repos#delete-branch-protection
+    # https://docs.github.com/en/rest/reference/repos#update-branch-protection
+
     protection:
       enforce_admins: false
       required_pull_request_reviews:
@@ -10,28 +14,59 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          - "Travis CI - Branch"
-          - "Travis CI - Pull Request"
+          - "Coding Standards"
+          - "Tests (7.1, highest)"
+          - "Tests (7.2, highest)"
+          - "Tests (7.3, highest)"
         strict: false
       restrictions: null
 
-labels:
-  - name: bug
-    color: ee0701
+# https://docs.github.com/en/rest/reference/issues#create-a-label
+# https://docs.github.com/en/rest/reference/issues#update-a-label
 
-  - name: enhancement
-    color: 0e8a16
+labels:
+  - name: "bug"
+    color: "ee0701"
+    description: ""
+
+  - name: "dependency"
+    color: "0366d6"
+    description: ""
+
+  - name: "enhancement"
+    color: "0e8a16"
+    description: ""
+
+  - name: "merge"
+    color: "6f42c1"
+    description: ""
+
+  - name: "question"
+    color: "cc317c"
+    description: ""
+
+  - name: "security"
+    color: "ee0701"
+    description: ""
+
+  - name: "stale"
+    color: "eeeeee"
+    description: ""
+
+# https://docs.github.com/en/rest/reference/repos#update-a-repository
 
 repository:
   allow_merge_commit: true
   allow_rebase_merge: false
   allow_squash_merge: false
-  default_branch: master
+  archived: false
+  default_branch: "master"
+  delete_branch_on_merge: true
   description: ":fork_and_knife: Fork of sebastian/diff for use with ergebnis/composer-normalize."
   has_downloads: true
   has_issues: false
   has_pages: false
   has_projects: false
   has_wiki: false
-  name: diff
+  name: "diff"
   private: false
