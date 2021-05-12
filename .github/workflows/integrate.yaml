@@ -31,7 +31,7 @@ jobs:
           strict: true
 
       - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.11.0"
         with:
           coverage: "none"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -74,7 +74,7 @@ jobs:
         uses: "actions/checkout@v2.3.1"
 
       - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.11.0"
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
@@ -130,7 +130,7 @@ jobs:
         run: "git fetch --depth=1 origin +refs/tags/*:refs/tags/*"
 
       - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.11.0"
         with:
           php-version: "7.4"
           coverage: "none"
@@ -162,7 +162,7 @@ jobs:
         uses: "actions/checkout@v2.3.1"
 
       - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.11.0"
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
@@ -211,7 +211,7 @@ jobs:
         uses: "actions/checkout@v2.3.1"
 
       - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.11.0"
         with:
           coverage: "xdebug"
           php-version: "${{ matrix.php-version }}"
