@@ -276,7 +276,7 @@ jobs:
 
     steps:
       - name: "Request review from @ergebnis-bot"
-        uses: "actions/github-script@v2"
+        uses: "actions/github-script@v4.1.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
@@ -295,7 +295,7 @@ jobs:
             })
 
       - name: "Assign @ergebnis-bot"
-        uses: "actions/github-script@v2"
+        uses: "actions/github-script@v4.1.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
@@ -314,7 +314,7 @@ jobs:
             })
 
       - name: "Approve pull request"
-        uses: "actions/github-script@v2"
+        uses: "actions/github-script@v4.1.1"
         if: "github.actor != 'ergebnis-bot'"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
@@ -330,7 +330,7 @@ jobs:
             })
 
       - name: "Merge pull request"
-        uses: "actions/github-script@v2"
+        uses: "actions/github-script@v4.1.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
