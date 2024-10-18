@@ -1,7 +1,6 @@
 # diff
 
 [![Integrate](https://github.com/localheinz/diff/workflows/Integrate/badge.svg?branch=main)](https://github.com/localheinz/diff/actions)
-[![Prune](https://github.com/localheinz/diff/workflows/Prune/badge.svg?branch=main)](https://github.com/localheinz/diff/actions)
 [![Release](https://github.com/localheinz/diff/workflows/Release/badge.svg?branch=main)](https://github.com/localheinz/diff/actions)
 
 [![Code Coverage](https://codecov.io/gh/localheinz/diff/branch/main/graph/badge.svg)](https://codecov.io/gh/localheinz/diff)

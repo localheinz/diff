@@ -5,7 +5,6 @@ We are using [GitHub Actions](https://github.com/features/actions) as a continuo
 For details, take a look at the following workflow configuration files:
 
 - [`workflows/integrate.yaml`](workflows/integrate.yaml)
-- [`workflows/prune.yaml`](workflows/prune.yaml)
 - [`workflows/release.yaml`](workflows/release.yaml)
 - [`workflows/triage.yaml`](workflows/triage.yaml)
 
