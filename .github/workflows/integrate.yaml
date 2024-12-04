@@ -135,7 +135,7 @@ jobs:
           - "7.1"
 
         dependencies:
-          - "locked"
+          - "highest"
 
     steps:
       - name: "Checkout"
