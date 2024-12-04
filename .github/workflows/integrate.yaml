@@ -47,7 +47,7 @@ jobs:
         uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.9.2"
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v4.1.2"
+        uses: "actions/cache@v4"
         with:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -100,7 +100,7 @@ jobs:
         uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.9.2"
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v4.1.2"
+        uses: "actions/cache@v4"
         with:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -165,7 +165,7 @@ jobs:
         run: "mkdir -p .build/php-cs-fixer/"
 
       - name: "Cache cache directory for friendsofphp/php-cs-fixer"
-        uses: "actions/cache@v4.1.2"
+        uses: "actions/cache@v4"
         with:
           path: ".build/php-cs-fixer/"
           key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ github.ref_name }}"
@@ -212,7 +212,7 @@ jobs:
         uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.9.2"
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v4.1.2"
+        uses: "actions/cache@v4"
         with:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -224,7 +224,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Cache cache directory for vimeo/psalm"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v4"
         with:
           path: ".build/psalm/"
           key: "php-${{ matrix.php-version }}-psalm-${{ github.sha }}"
@@ -281,7 +281,7 @@ jobs:
         uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.9.2"
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v4.1.2"
+        uses: "actions/cache@v4"
         with:
           path: "${{ env.COMPOSER_CACHE_DIR }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
