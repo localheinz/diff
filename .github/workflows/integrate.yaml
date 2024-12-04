@@ -132,7 +132,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - "highest"
