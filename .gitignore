@@ -1,5 +1,5 @@
 /.build/
-/.notes/
+/.note/
 /vendor/
 /from.txt.orig
 /composer.lock
