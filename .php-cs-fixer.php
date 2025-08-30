@@ -54,7 +54,13 @@ return $config
         ],
         'braces' => true,
         'cast_spaces' => true,
-        'class_attributes_separation' => ['elements' => ['const', 'method', 'property']],
+        'class_attributes_separation' => [
+            'elements' => [
+                'const' => 'one',
+                'method' => 'one',
+                'property'=> 'one',
+            ],
+        ],
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
         'compact_nullable_typehint' => true,
