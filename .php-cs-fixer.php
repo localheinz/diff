@@ -13,7 +13,10 @@ $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__ . '/src')
     ->in(__DIR__ . '/tests');
 
-return PhpCsFixer\Config::create()
+
+$config = new PhpCsFixer\Config();
+
+return $config
     ->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache')
     ->setFinder($finder)
     ->setRiskyAllowed(true)
