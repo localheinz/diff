@@ -59,6 +59,9 @@ return $config
         'combine_consecutive_unsets' => true,
         'compact_nullable_typehint' => true,
         'concat_space' => ['spacing' => 'one'],
+        'constant_case' => [
+            'case' => 'upper',
+        ],
         'declare_equal_normalize' => ['space' => 'none'],
         'declare_strict_types' => true,
         'dir_constant' => true,
@@ -78,7 +81,6 @@ return $config
         'list_syntax' => ['syntax' => 'short'],
         'logical_operators' => true,
         'lowercase_cast' => true,
-        'lowercase_constants' => true,
         'lowercase_keywords' => true,
         'lowercase_static_reference' => true,
         'magic_constant_casing' => true,
