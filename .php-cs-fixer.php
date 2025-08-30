@@ -65,6 +65,9 @@ return $config
         'declare_equal_normalize' => ['space' => 'none'],
         'declare_strict_types' => true,
         'dir_constant' => true,
+        'echo_tag_syntax' => [
+            'format' => 'long'
+        ],
         'elseif' => true,
         'encoding' => true,
         'full_opening_tag' => true,
@@ -110,7 +113,6 @@ return $config
         'no_null_property_initialization' => true,
         'no_php4_constructor' => true,
         'no_short_bool_cast' => true,
-        'no_short_echo_tag' => true,
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_after_function_name' => true,
         'no_spaces_inside_parenthesis' => true,
