@@ -9,7 +9,7 @@ code-coverage: vendor ## Collects code coverage from running unit tests with php
 coding-standards: vendor ## Lints YAML files with yamllint, normalizes composer.json with ergebnis/composer-normalize, and fixes code style issues with friendsofphp/php-cs-fixer
 	yamllint -c .yamllint.yaml --strict .
 	tools/composer-normalize
-	tools/php-cs-fixer fix --config=.php-cs-fixer.php --diff --diff-format=udiff --verbose
+	tools/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
 
 .PHONY: help
 help: ## Displays this list of targets with descriptions
