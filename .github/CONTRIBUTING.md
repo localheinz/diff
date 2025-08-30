@@ -45,18 +45,6 @@ make coding-standards
 
 to automatically fix coding standard violations.
 
-## Static Code Analysis
-
-We use [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.
-
-Run
-
-```sh
-make static-code-analysis
-```
-
-to run a static code analysis.
-
 ## Tests
 
 We use [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
