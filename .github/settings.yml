@@ -17,7 +17,6 @@ branches:
           - context: "Backward-Compatibility Analysis (7.4, highest)"
           - context: "Code Coverage (7.4, highest)"
           - context: "Coding Standards (7.4, highest)"
-          - context: "Static Code Analysis (7.4, highest)"
           - context: "Tests (7.1, highest)"
           - context: "Tests (7.1, lowest)"
           - context: "Tests (7.2, highest)"
