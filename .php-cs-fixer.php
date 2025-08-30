@@ -66,7 +66,7 @@ return $config
         'compact_nullable_typehint' => true,
         'concat_space' => ['spacing' => 'one'],
         'constant_case' => [
-            'case' => 'upper',
+            'case' => 'lower',
         ],
         'declare_equal_normalize' => ['space' => 'none'],
         'declare_strict_types' => true,
