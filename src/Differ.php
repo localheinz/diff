@@ -104,9 +104,8 @@ final class Differ
      * - 1: ADDED: $token was added to $from
      * - 0: OLD: $token is not changed in $to
      *
-     * @param array|string                        $from
-     * @param array|string                        $to
-     * @param ?LongestCommonSubsequenceCalculator $lcs
+     * @param array|string $from
+     * @param array|string $to
      */
     public function diffToArray($from, $to, ?LongestCommonSubsequenceCalculator $lcs = null): array
     {
